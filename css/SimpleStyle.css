@@ -2334,6 +2334,9 @@ body {
     color:white;
     text-align:center
 }
+#cover .cover-info p{
+    margin-top:50px;
+}
 #cover .cover-sns .btn {
     height:24px;
     line-height:24px;
