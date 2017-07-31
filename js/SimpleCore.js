@@ -136,8 +136,8 @@ var SimpleCore = {
             $('body').removeClass('night-mode');
             btn.find('i').attr('class', 'fa fa-sun-o');
             $(".cover-img").css({
-                'background': "url('/images/cover-day.jpg')",
-                'background-image': '/images/cover-day.jpg',
+                'background': "url('/images/mycat.png')",
+                'background-image': '/images/mycat.png',
                 'background-size': 'cover',
                 'background-position': 'center',
                 'background-repeat': 'no-repeat'
