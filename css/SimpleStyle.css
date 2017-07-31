@@ -2328,7 +2328,7 @@ body {
 }
 #cover .cover-info {
     position:absolute;
-    bottom:0;
+    bottom:250px;
     width:100%;
     padding:30px 0;
     color:white;
