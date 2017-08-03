@@ -32,7 +32,7 @@ var SimpleCore = {
         $(document).on('click', '.btn-weixin-mp', function (e) {
             e.preventDefault();
             if (SimpleCore.customImg != '') {
-                SimpleCore.alert('更多精彩扫扫这里','<img style="width:160px;background:#fff;" src="' + SimpleCore.customImg + '">');
+                SimpleCore.alert('添加博主微信','<img style="width:160px;background:#fff;" src="' + SimpleCore.customImg + '">');
             } else {
                 SimpleCore.alert('未开通自定义功能','<h4 style="text-align: center;margin: 0">联系博主试试看 ：）</h4>');
             }
