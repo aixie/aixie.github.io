@@ -48,11 +48,11 @@
 <link rel="shortcut icon" href="/images/1.png">
 
 
-<title>标签 - coc - scissors</title>
+<title>express框架之session - scissors</title>
 
 <meta name="keywords" content="Scissors，技术博客，原创IT博客，谢博">
 
-<meta name="description " content="this is my private blog">
+<meta name="description " content="express框架之session 数据库存储">
 </head>
 <body>
 <div id="nav">
@@ -99,29 +99,29 @@
 </div>
             <div class="page-title">
     <ul>
-        <li class="">
-            <a href="/" data-name="最近文章">最近</a>
-        </li>
+        <li><a href="/">最新</a></li>
         
-        <li class="">
-            <a href="/categories/big-front-end" data-name="前端">前端</a>
-        </li>
-        
-        <li class="">
-            <a href="/categories/server-side" data-name="后台">后台</a>
-        </li>
-        
-        <li class="">
-            <a href="/categories/design" data-name="设计">设计</a>
-        </li>
-        
-        <li class="">
-            <a href="/categories/game" data-name="游戏">游戏</a>
-        </li>
-        
-        <li class="">
-            <a href="/categories/live" data-name="生活">生活</a>
-        </li>
+            
+                <li class="">
+                    <a href="/categories/big-front-end" data-name="前端">前端</a>
+                </li>
+            
+                <li class="active">
+                    <a href="/categories/server-side" data-name="后台">后台</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/design" data-name="设计">设计</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/game" data-name="游戏">游戏</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/live" data-name="生活">生活</a>
+                </li>
+            
         
         <li class="page-search">
     <form id="search" class="search-form">
@@ -162,45 +162,41 @@
     </ul>
 </div>
 <div class="main-inner">
-    
-    
-    
-<article class="post">
-    
-    <!-- 有配图默认渲染第一张 -->
-    <div class="post-cover">
-        <a href="/2017/07/28/coc/" target="_blank" title="部落冲突游戏心得"
-           style="background-image:url(/img/coc.jpg)"></a>
-    </div>
-    
-    <div class="post-header">
-        <div class="post-meta">
-            <a href="https://xiebo0707.github.io" target="_blank">
-                <strong>谢先森</strong>
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="post-header">
+            <div class="post-author clearfix">
+                <a class="avatar fleft" href="https://xiebo0707.github.io" target="_blank">
+                    <img width="48" src="/images/1.png" alt="avatar"/>
+                </a>
+                <p><span class="label">作者</span>
+                    <a href="https://xiebo0707.github.io" target="_blank">谢先森</a>
+                    <span title="最后编辑于2017-08-14">2017-08-14</span>
+                </p>
+                <p>一个写代码的「艺术家」</p>
+            </div>
+            <h2 class="post-title">express框架之session</h2>
+            <div class="post-meta">
+                本文总共492个字 | 您是第<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>位看到它们的小伙伴
+            </div>
+        </div>
+        <div class="post-content markdown-body">
+            <h3 id="express框架之session-数据库存储"><a href="#express框架之session-数据库存储" class="headerlink" title="express框架之session 数据库存储"></a>express框架之session 数据库存储</h3><p>express框架提供了针对mongodb的中间件：connect-mongo，我们只需在挂载session的时候在options中传入mongodb的参数即可，程序运行的时候, express app 会自动的替我们管理session的存储，更新和删除。具体可以参考：<a href="https://github.com/kcbanner/connect-mongo" target="_blank" rel="external">github地址</a></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">app.use(express.session(&#123;</div><div class="line">    secret: <span class="string">'keyboard cat'</span>,</div><div class="line">    saveUninitialized: <span class="literal">false</span>, <span class="comment">// don't create session until something stored</span></div><div class="line">	resave: <span class="literal">false</span>, <span class="comment">//don't save session if unmodified</span></div><div class="line">	store: <span class="keyword">new</span> MongoStore(&#123;</div><div class="line">		url: <span class="string">'mongodb://localhost/test-app'</span>,</div><div class="line">		touchAfter: <span class="number">24</span> * <span class="number">3600</span> <span class="comment">// time period in seconds</span></div><div class="line">	&#125;)</div><div class="line">&#125;));</div></pre></td></tr></table></figure>
+        </div>
+        <div class="post-tool">
+            <a class="btn-weixin-mp" href="javascript:void(0);" data-cid="52" title="95">
+                <i class="fa fa-mobile" aria-hidden="true"></i> 打包
             </a>
-            <em>·</em>2017-07-28
         </div>
-        <a class="post-title" href="/2017/07/28/coc/" target="_blank" title="部落冲突游戏心得">部落冲突游戏心得</a>
-        <div class="post-meta">
-            <a href="/tags" target="_blank"><i class="fa fa-tags"></i></a>
-            
-                <em>·</em>
-                <a href="http://xiebo0707.github.io/tags/coc/" target="_blank">coc</a>
+        
+        <div class="post-tags">标签：
             
         </div>
-    </div>
-    <div class="post-desc">
-        玩了这么多年，也有感情了。
-    </div>
-</article>
-
-
-
+        
+    </article>
     
 </div>
-<!-- 分页开始 -->
-
-
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
         </div><!-- end #main-->
     </div><!-- end #body -->
     <footer class="footer">

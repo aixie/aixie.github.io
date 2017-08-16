@@ -52,7 +52,7 @@
 
 <meta name="keywords" content="Scissors，技术博客，原创IT博客，谢博">
 
-<meta name="description " content="this is my private blog">
+<meta name="description " content="Vue开发中能的问题，并如何解决。">
 </head>
 <body>
 <div id="nav">
@@ -83,16 +83,16 @@
         <p>一个关注技术、好玩、爱生活的IT博客</p>
         <div class="cover-sns">
             <div class="btn btn-slack">
-                <a href="https://xiebo0707.github.io" target="_blank" rel="nofollow"><i class="fa fa-slack"></i></a>
+                <a href="https://aixie.github.io" target="_blank" rel="nofollow"><i class="fa fa-slack"></i></a>
             </div>
             <div class="btn btn-weibo">
-                <a href="https://weibo.com/tangkunyin" target="_blank" rel="nofollow"><i class="fa fa-weibo"></i></a>
+                <a href="https://weibo.com" target="_blank" rel="nofollow"><i class="fa fa-weibo"></i></a>
             </div>
             <div class="btn btn-facebook">
                 <a href="https://www.baidu.com"  target="_blank" rel="nofollow"><i class="fa fa-facebook"></i></a>
             </div>
             <div class="btn btn-github">
-                <a href="https://github.com/xiebo0707"  target="_blank" rel="nofollow"><i class="fa fa-github"></i></a>
+                <a href="https://github.com/aixie"  target="_blank" rel="nofollow"><i class="fa fa-github"></i></a>
             </div>
         </div>
     </div>
@@ -176,11 +176,11 @@
             </div>
             <h2 class="post-title">Vue开发中遇到的问题（一）</h2>
             <div class="post-meta">
-                本文总共3个字 | 您是第<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>位看到它们的小伙伴
+                本文总共243个字 | 您是第<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>位看到它们的小伙伴
             </div>
         </div>
         <div class="post-content markdown-body">
-            <h2 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h2>
+            <h2 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h2><h3 id="vue-cli-webpack-proxyTable配置解决跨域问题"><a href="#vue-cli-webpack-proxyTable配置解决跨域问题" class="headerlink" title="vue-cli webpack proxyTable配置解决跨域问题"></a>vue-cli webpack proxyTable配置解决跨域问题</h3><figure class="highlight less"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">proxyTable</span>: &#123;</div><div class="line">      <span class="string">'/api'</span>: &#123;</div><div class="line">        <span class="attribute">target</span>: <span class="string">'http://127.0.0.1:3000'</span>,</div><div class="line">        <span class="attribute">changeOrigin</span>: true,</div><div class="line">        <span class="attribute">pathRewrite</span>: &#123;</div><div class="line">        <span class="string">'^/api'</span>: <span class="string">'/api'</span></div><div class="line">          &#125;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">    &#125;</div></pre></td></tr></table></figure>
         </div>
         <div class="post-tool">
             <a class="btn-weixin-mp" href="javascript:void(0);" data-cid="52" title="95">
