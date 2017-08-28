@@ -2260,10 +2260,10 @@ a.btn:hover {
     color:#fff
 }
 .btn-slack {
-    background:#4d394b
+    background:#25A6F3
 }
 .btn-slack:hover {
-    background: #4d3447
+    background: #187DFB
 }
 .btn-weibo {
     background-color:#f96774
@@ -2271,17 +2271,17 @@ a.btn:hover {
 .btn-weibo:hover {
     background-color:#e34e5c
 }
-.btn-facebook {
-    background-color:#1c95f4
+.btn-weixin {
+    background-color:#1aad19
 }
-.btn-facebook:hover {
-    background-color:#3286f9
+.btn-weixin:hover {
+    background-color:#129611
 }
 .btn-github {
-    background-color:#999
+    background-color:#3c3c3c
 }
 .btn-github:hover {
-    background-color:#8a8a8a
+    background-color:#333
 }
 a.avatar img,img.avatar {
     vertical-align:middle;
